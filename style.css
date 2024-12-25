@@ -8,18 +8,22 @@ body {
   line-height: 1.8em;
   color: #666;
 }
+
 .pimg1 {
   background-image: url(images/image1.png);
   min-height: 100%;
 }
+
 .pimg2 {
   background-image: url(images/image2.png);
   min-height: 400px;
 }
+
 .pimg3 {
   background-image: url(images/image3.png);
   min-height: 400px;
 }
+
 .pimg1,
 .pimg2,
 .pimg3 {
@@ -33,28 +37,52 @@ body {
 .ptext {
   position: absolute;
   top: 50%;
-  width: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
   color: black;
   font-size: 27px;
   letter-spacing: 8px;
   text-transform: uppercase;
 }
+
 .textBg {
   background: #313534;
   color: #fff;
-  padding: 20px;
+  padding: 20px 40px;
+  border-radius: 10px;
+  display: inline-block;
 }
 
 .section {
   padding: 50px 80px;
   text-align: center;
 }
+
 .section-light {
   background-color: #f4f4f4;
   color: #666;
 }
+
 .section-dark {
   background-color: #282e34;
   color: #ddd;
+}
+
+@media (max-width: 768px) {
+  .pimg1,
+  .pimg2,
+  .pimg3 {
+    background-attachment: scroll;
+  }
+
+  .ptext {
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding: 10px;
+  }
+
+  .textBg {
+    padding: 15px 20px;
+  }
 }
